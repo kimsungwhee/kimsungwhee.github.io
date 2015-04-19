@@ -15,18 +15,18 @@ tags:
 今天突然有个想法到底是什么影响网速的呢？
 
 首先用traceroute测试了一下，发现有几个点非常的慢。而且通过IP查询，发现竟然跳转的路径很奇怪。  
-[<img class="alignnone size-full wp-image-52" alt="QQ20140118-1@2x" src="http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-1@2x.png" width="1016" height="674" />][1]
+[<img class="alignnone size-full wp-image-52" alt="QQ20140118-1@2x" src="http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-1@2x.png" width="1016" height="674" />][1]
 
 发现210.130.1.1这个服务器很慢，到http://whatismyipaddress.com/搜索了一下，发现这个服务器所在地在东京，按理来说居然在东京的话，应该不会出现这么大的延迟现象啊。
 
 接着继续查了一下，另一个Ip 202.97.60.34  
-[<img class="alignnone size-large wp-image-53" alt="QQ20140118-2@2x" src="http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-2@2x-629x1024.png" width="604" height="983" />][2]
+[<img class="alignnone size-large wp-image-53" alt="QQ20140118-2@2x" src="http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-2@2x-629x1024.png" width="604" height="983" />][2]
 
 总算是到中国了，然而为什么要去这么内陆的地方呢？不应该是去上海或者是北京之类的地方吗。当然这个网站提供的数据不一定百分之白正确。  
 调查到这里突然感觉，这个难道会不会是DNS的设置所影响的呢，以前一直使用的8.8.8.8这个google的DNS服务器。关于Google的DNS服务器可以到[wiki][3]看一下。原本以为使用Google的DNS服务器会加快网速，结果没有想到。。。。
 
 改回默认ISP提供的DNS服务器之后，结果太让我意外了。走的路径完全不一样并且网站访问速度有了明显的提高。  
-[<img class="alignnone size-full wp-image-54" alt="QQ20140118-3@2x" src="http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-3@2x.png" width="1014" height="838" />][4]
+[<img class="alignnone size-full wp-image-54" alt="QQ20140118-3@2x" src="http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-3@2x.png" width="1014" height="838" />][4]
 
 &nbsp;
 
@@ -34,7 +34,7 @@ tags:
 
 如果你在访问一些比较特殊的网站或者被ISP禁用的网站的话，可以考虑使用Google的DNS，毕竟上帝为了开了一扇门也会为你关掉一扇门。
 
- [1]: http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-1@2x.png
- [2]: http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-2@2x.png
+ [1]: http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-1@2x.png
+ [2]: http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-2@2x.png
  [3]: http://zh.wikipedia.org/wiki/Google_Public_DNS
- [4]: http://www.iappfan.com/wp-content/uploads/2014/01/QQ20140118-3@2x.png
+ [4]: http://kimsungwhee.com/wp-content/uploads/2014/01/QQ20140118-3@2x.png

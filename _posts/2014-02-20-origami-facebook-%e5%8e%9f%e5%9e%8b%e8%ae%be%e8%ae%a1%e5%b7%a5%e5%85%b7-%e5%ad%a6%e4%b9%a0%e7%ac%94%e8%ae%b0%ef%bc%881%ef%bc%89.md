@@ -22,7 +22,7 @@ http://facebook.github.io/origami/
 
 大概的效果如下：
 
-[<img class="alignnone size-medium wp-image-112" alt="QQ20140220-1" src="http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-1-144x300.png" width="144" height="300" />][1][<img class="alignnone size-medium wp-image-113" alt="QQ20140220-2" src="http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-2-144x300.png" width="144" height="300" />][2]
+[<img class="alignnone size-medium wp-image-112" alt="QQ20140220-1" src="http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-1-144x300.png" width="144" height="300" />][1][<img class="alignnone size-medium wp-image-113" alt="QQ20140220-2" src="http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-2-144x300.png" width="144" height="300" />][2]
 
 &nbsp;
 
@@ -32,14 +32,14 @@ http://facebook.github.io/origami/
 
 下面来分析一下这个是怎么实现的，首先打开编辑窗口你会看到如下：
 
-[<img class="alignnone size-large wp-image-114" alt="QQ20140220-3" src="http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-3-1024x751.png" width="604" height="442" />][3]
+[<img class="alignnone size-large wp-image-114" alt="QQ20140220-3" src="http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-3-1024x751.png" width="604" height="442" />][3]
 
 &nbsp;
 
 如果只是看这个界面还是不是很清楚怎么实现的图片缩放功能。。。  
 仔细观察你会发现在Render in Image上写着Double click to open（Facebook的工程师还挺细心的呢，呵呵），既然这么写了，我们双击来打开看看有什么。
 
-[<img class="alignnone size-large wp-image-115" alt="QQ20140220-4" src="http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-4-1024x751.png" width="604" height="442" />][4]
+[<img class="alignnone size-large wp-image-115" alt="QQ20140220-4" src="http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-4-1024x751.png" width="604" height="442" />][4]
 
 &nbsp;
 
@@ -54,7 +54,7 @@ https://developer.apple.com/library/mac/documentation/graphicsimaging/conceptual
 关于Switch如果直接翻译的话是开关，但是我觉得他其实就是一个状态机，就是表示某种状态的。比如当上面的Interaction接受的Layer的单机事件的话，他会告诉Switch有单击事件，并且将Switch的On/Off值设置为0跟1，接下来就会Bouncy Animation。  
 并且Bouncy Animation的Progress的与俩个Transition链接。Transition就是来实现缩放的功能的。打开Patch Inspector会看到他有一个Start与End的值。
 
-[<img class="alignnone size-medium wp-image-119" alt="QQ20140220-6" src="http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-6-201x300.png" width="201" height="300" />][5]
+[<img class="alignnone size-medium wp-image-119" alt="QQ20140220-6" src="http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-6-201x300.png" width="201" height="300" />][5]
 
 &nbsp;
 
@@ -66,8 +66,8 @@ http://facebook.github.io/origami/examples/download/Alpha%20and%20Scale.qtz
 
 &nbsp;
 
- [1]: http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-1.png
- [2]: http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-2.png
- [3]: http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-3.png
- [4]: http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-4.png
- [5]: http://www.iappfan.com/wp-content/uploads/2014/02/QQ20140220-6.png
+ [1]: http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-1.png
+ [2]: http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-2.png
+ [3]: http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-3.png
+ [4]: http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-4.png
+ [5]: http://kimsungwhee.com/wp-content/uploads/2014/02/QQ20140220-6.png
