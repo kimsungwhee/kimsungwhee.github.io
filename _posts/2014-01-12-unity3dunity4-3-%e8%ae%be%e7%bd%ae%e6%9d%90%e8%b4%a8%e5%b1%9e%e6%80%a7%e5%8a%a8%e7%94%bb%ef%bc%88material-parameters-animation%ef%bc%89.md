@@ -13,7 +13,7 @@ tags:
 ---
 今天发现4.3之后的Animaiton窗口跟以前不一样了。不能直接设置材质的offset动画了。后来在Unity的官方论坛发现了有同样困扰的人发的[帖子][1]。希望简单分享一下我实现的方法吧。直接上图
 
-<img class="alignnone size-large wp-image-29" alt="material" src="http://www.iappfan.com/wp-content/uploads/2014/01/material-1024x349.png" width="604" height="205" />
+<img class="alignnone size-large wp-image-29" alt="material" src="http://kimsungwhee.com/wp-content/uploads/2014/01/material-1024x349.png" width="604" height="205" />
 
 实际上就是4.3之后的材质选项被归类到网格的下面，并且名称也发生了变化。
 
