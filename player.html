@@ -35,7 +35,7 @@ body{
         if (flvjs.isSupported()) {
             const url = new URL(window.location.search.replace("?url=",""))
             
-            let play_url = `https:${url.pathname}.flv`;
+            let play_url = `http:${url.pathname}.flv`;
             if (url.search && url.search !== "null" && url.search !== "undefined"){
                 play_url = `${play_url}${url.search}`
             }
