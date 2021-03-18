@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>player</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+body{
+      background-color:black;
+    }
+    #videoElement{
+        position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <video id="videoElement" class="centeredVideo" controls autoplay>Your browser is too old which doesn't support HTML5 video.</video>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
+    <script>
+        var player = document.getElementById('videoElement');
+        if (flvjs.isSupported()) {
+            const url = new URL(window.location.search.replace("?url=",""))
+            
+            let play_url = `https:${url.pathname}.flv`;
+            if (url.search && url.search !== "null" && url.search !== "undefined"){
+                play_url = `${play_url}${url.search}`
+            }
+            var flvPlayer = flvjs.createPlayer({
+                type: 'flv',
+                url: play_url
+            });
+            flvPlayer.attachMediaElement(videoElement);
+            flvPlayer.load();
+        }
+    </script>
+</body>
+
+</html>
